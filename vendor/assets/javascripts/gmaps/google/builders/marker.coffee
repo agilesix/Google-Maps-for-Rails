@@ -50,6 +50,7 @@ class @Gmaps.Google.Builders.Marker extends Gmaps.Objects.BaseBuilder
       position: new(@primitives().latLng)(coords[0], coords[1])
       icon:     @_get_picture('picture')
       shadow:   @_get_picture('shadow')
+      label:    @args.marker_label
     _.extend @provider_options, base_options
 
   create_infowindow_on_click: ->
